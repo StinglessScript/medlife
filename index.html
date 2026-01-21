@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TrueDoc x BIDV MetLife - Đặc quyền Chăm sóc Sức khỏe</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-teal": "#005E54",
+                        "accent-teal": "#11d4c4",
+                        "gold-main": "#C5A059",
+                        "gold-light": "#E5C992",
+                        "secondary": "#00A19B",
+                        "dark-teal": "#00443D",
+                        "background-light": "#F9FAFB",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "3xl": "2.5rem",
+                        "4xl": "2.5rem",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-display text-[#111817] bg-[#F9FAFB] overflow-x-hidden;
+            }
+        }
+        .teal-gradient {
+            background: linear-gradient(135deg, #005E54 0%, #00443D 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+        }
+        .premium-card-hover:hover {
+            @apply shadow-[0_20px_40px_rgba(0,0,0,0.05)] -translate-y-2;
+        }
+        .hero-bg-enhanced {
+            background-color: #004841;
+            background-image: radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.15) 0%, transparent 50%),
+                              radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light">
+    <div id="header-placeholder"></div>
+
+    <section
+        class="hero-bg-enhanced relative overflow-hidden pt-24 pb-48 md:pt-32 md:pb-56 px-6 lg:px-20 text-white text-center">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-3 mb-8 justify-center">
+                <div class="h-px w-10 bg-gold-main"></div>
+                <span class="text-gold-light uppercase tracking-[0.3em] font-black text-[10px]">Đặc quyền hội viên BIDV
+                    MetLife</span>
+                <div class="h-px w-10 bg-gold-main"></div>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] mb-10 tracking-tight">
+                Đặc quyền <br class="md:hidden" />
+                <span class="text-gold-main">chăm sóc sức khỏe</span><br />
+                dành riêng cho bạn
+            </h1>
+            <p
+                class="text-white/70 text-base md:text-lg lg:text-xl mb-14 leading-relaxed max-w-2xl mx-auto font-medium px-4 md:px-0">
+                Tận hưởng hệ sinh thái chăm sóc sức khỏe toàn diện, phối hợp cùng mạng lưới bệnh viện quốc tế hàng đầu.
+                Dành riêng cho khách hàng ưu tiên của BIDV MetLife.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center px-4 md:px-0">
+                <a href="lookup.html"
+                    class="inline-flex items-center justify-center px-10 md:px-12 py-5 md:py-6 bg-gold-main hover:bg-gold-light text-dark-teal font-black uppercase tracking-widest rounded-2xl shadow-2xl shadow-gold-main/20 transition-all hover:scale-105 active:scale-95 group">
+                    Tra cứu quyền lợi
+                    <span
+                        class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform font-black">arrow_forward</span>
+                </a>
+                <button
+                    class="inline-flex items-center justify-center px-10 md:px-12 py-5 md:py-6 border-2 border-white/20 hover:bg-white/5 text-white font-bold uppercase tracking-widest rounded-2xl transition-all backdrop-blur-sm">
+                    Xem gói ưu đãi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 md:py-32 px-6 lg:px-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <span class="text-primary-teal/60 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Thao tác
+                    nhanh</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6">3 việc bạn có thể làm ngay</h2>
+                <div class="w-20 h-1 bg-gold-main mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                <a href="lookup.html"
+                    class="group bg-[#F1F7F6] p-10 rounded-[40px] border border-white hover:bg-white premium-card-hover transition-all duration-500">
+                    <div
+                        class="size-16 rounded-2xl bg-white flex items-center justify-center mb-8 shadow-sm group-hover:bg-primary-teal group-hover:text-white transition-all text-primary-teal">
+                        <span class="material-symbols-outlined text-3xl">travel_explore</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-dark-teal">Tra cứu quyền lợi</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">Kiểm tra ngay danh mục bảo hiểm và dịch vụ y
+                        tế dành riêng cho hạng hội viên của bạn.</p>
+                    <div
+                        class="flex items-center gap-2 text-primary-teal font-bold text-xs uppercase tracking-widest group-hover:translate-x-1 transition-transform">
+                        Khám phá <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </div>
+                </a>
+                <div
+                    class="group bg-[#FBF8F2] p-10 rounded-4xl border border-white hover:bg-white premium-card-hover transition-all duration-500 cursor-pointer">
+                    <div
+                        class="size-16 rounded-2xl bg-white flex items-center justify-center mb-8 shadow-sm group-hover:bg-gold-main group-hover:text-white transition-all text-gold-main">
+                        <span class="material-symbols-outlined text-3xl">edit_calendar</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-dark-teal">Đặt lịch tư vấn</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">Đặt lịch hẹn trực tuyến với đội ngũ bác sĩ đầu
+                        ngành chỉ với một chạm trên ứng dụng.</p>
+                    <div
+                        class="flex items-center gap-2 text-gold-main font-bold text-xs uppercase tracking-widest group-hover:translate-x-1 transition-transform">
+                        Đặt ngay <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </div>
+                </div>
+                <a href="newsletter.html"
+                    class="group bg-[#F0F4F8] p-10 rounded-4xl border border-white hover:bg-white premium-card-hover transition-all duration-500">
+                    <div
+                        class="size-16 rounded-2xl bg-white flex items-center justify-center mb-8 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <span class="material-symbols-outlined text-3xl">mark_as_unread</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-dark-teal">Đọc bản tin</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">Nhận thông tin y khoa mới nhất và bí quyết
+                        sống khỏe từ các chuyên gia TrueDoc.</p>
+                    <div
+                        class="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-1 transition-transform">
+                        Tìm hiểu <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 md:py-32 px-6 lg:px-20 bg-[#F9FAFB]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-8 px-4">Đặc quyền theo hạng thành viên</h2>
+                <div class="inline-flex p-1.5 bg-white rounded-full border border-gray-100 shadow-sm overflow-hidden"
+                    id="tier-toggle">
+                    <button data-tier="gold"
+                        class="px-10 py-3 rounded-full text-[11px] font-bold tracking-widest transition-all text-gray-400 hover:text-dark-teal active-tier">HẠNG
+                        VÀNG</button>
+                    <button data-tier="platinum"
+                        class="px-10 py-3 rounded-full text-[11px] font-bold tracking-widest transition-all text-gray-400 hover:text-dark-teal">HẠNG
+                        PLATINUM</button>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggle = document.getElementById('tier-toggle');
+                    const buttons = toggle.querySelectorAll('button');
+                    const tierCardsContainer = document.getElementById('tier-cards');
+
+                    const tiers = {
+                        gold: [
+                            { icon: 'stethoscope', title: 'Khám Tổng Quát', desc: 'Kiểm tra sức khỏe định kỳ với danh mục xét nghiệm chuyên sâu.', items: ['Khám Nội tổng quát', 'Xét nghiệm máu & Nước tiểu'] },
+                            { icon: 'psychology', title: 'Tâm lý Trị liệu', desc: 'Kết nối bác sĩ tâm lý hàng đầu hỗ trợ từ xa không giới hạn.', items: ['Tư vấn online 24/7', 'Kết nối chuyên gia đầu ngành'] },
+                            { icon: 'home_health', title: 'Y tế tại nhà', desc: 'Dịch vụ lấy mẫu xét nghiệm và chăm sóc y tế tại địa chỉ của bạn.', items: ['Phục vụ nội thành', 'Trả kết quả qua App'] },
+                            { icon: 'emergency_share', title: 'Bảo lãnh Viện phí', desc: 'Sử dụng thẻ bảo hiểm tại hơn 200 bệnh viện liên kết toàn quốc.', items: ['Thủ tục nhanh chóng', 'Hỗ trợ 24/7'] }
+                        ],
+                        platinum: [
+                            { icon: 'add_moderator', title: 'Tư vấn trực tuyến', desc: 'Tư vấn không giới hạn cả năm với đội ngũ Bác sĩ chuyên khoa.', items: ['Nội tổng quát, Tai Mũi Họng', 'Dinh dưỡng chuyên sâu'] },
+                            { icon: 'clinical_notes', title: 'Khám tổng quát Platinum', desc: 'Danh mục khám chuyên sâu (Nội, Xét nghiệm, Siêu âm bụng, Tuyến giáp).', items: ['Tầm soát ung thư cơ bản', 'Siêu âm & Chẩn đoán hình ảnh'] },
+                            { icon: 'person_raised_hand', title: 'Thư ký y khoa', desc: 'Đội ngũ hỗ trợ đặt lịch, xếp hàng và xử lý mọi thủ tục tại bệnh viện.', items: ['Miễn phí 02 lượt đầu/năm', 'Hỗ trợ tiếp nhận thông tin 24/7'] },
+                            { icon: 'groups', title: 'Hội thảo sức khỏe', desc: 'Tham dự các buổi chia sẻ từ diễn giả là đội ngũ bác sĩ, chuyên gia đầu ngành.', items: ['Cập nhật kiến thức chuẩn xác', 'Tương tác trực tiếp với bác sĩ'] }
+                        ]
+                    };
+
+                    function updateTier(tier) {
+                        buttons.forEach(btn => {
+                            if (btn.getAttribute('data-tier') === tier) {
+                                btn.classList.add('gold-gradient', 'text-white', 'shadow-lg');
+                                btn.classList.remove('text-gray-400', 'hover:text-dark-teal');
+                            } else {
+                                btn.classList.remove('gold-gradient', 'text-white', 'shadow-lg');
+                                btn.classList.add('text-gray-400', 'hover:text-dark-teal');
+                            }
+                        });
+
+                        tierCardsContainer.innerHTML = tiers[tier].map(card => `
+                            <div class="bg-white p-8 rounded-4xl border border-gray-100 hover:border-gold-main/20 transition-all flex flex-col group shadow-sm hover:shadow-xl duration-500">
+                                <div class="size-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-8 group-hover:bg-primary-teal group-hover:text-white transition-all text-primary-teal">
+                                    <span class="material-symbols-outlined text-2xl">${card.icon}</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-3 text-dark-teal">${card.title}</h3>
+                                <p class="text-sm text-gray-500 leading-relaxed mb-6 flex-grow">${card.desc}</p>
+                                <ul class="space-y-3 pt-6 border-t border-gray-50">
+                                    ${card.items.map(item => `
+                                        <li class="flex items-center gap-3 text-xs font-semibold text-gray-600">
+                                            <span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                                            <span>${item}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        `).join('');
+                    }
+
+                    buttons.forEach(btn => {
+                        btn.addEventListener('click', () => updateTier(btn.getAttribute('data-tier')));
+                    });
+
+                    // Set default
+                    updateTier('platinum');
+                });
+            </script>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="tier-cards">
+                <!-- Cards will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 lg:px-20 teal-gradient relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <span
+                class="material-symbols-outlined text-[300px] md:text-[400px] absolute -left-20 -bottom-20">verified</span>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16 md:mb-24 px-4">
+                <span class="text-gold-light font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Quy trình đơn
+                    giản</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight">Kích hoạt quyền lợi chỉ
+                    với 3 bước</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-20 rounded-full bg-white/10 border-2 border-gold-main/30 flex items-center justify-center text-gold-main font-black text-2xl mb-8 group-hover:bg-gold-main group-hover:text-dark-teal transition-all shadow-xl">
+                        1</div>
+                    <h4 class="font-bold text-xl mb-4 text-white">Nhận cuộc gọi</h4>
+                    <p class="text-white/60 text-sm leading-relaxed">Nhận "Welcome Call" từ Bác sĩ phụ trách & đăng ký
+                        trực tiếp quyền lợi với bác sĩ.</p>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-20 rounded-full bg-white/10 border-2 border-gold-main/30 flex items-center justify-center text-gold-main font-black text-2xl mb-8 group-hover:bg-gold-main group-hover:text-dark-teal transition-all shadow-xl">
+                        2</div>
+                    <h4 class="font-bold text-xl mb-4 text-white">Tải App TrueDoc</h4>
+                    <p class="text-white/60 text-sm leading-relaxed">Cài đặt ứng dụng để quản lý hồ sơ sức khỏe và đặt
+                        lịch tư vấn mọi lúc mọi nơi.</p>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="size-20 rounded-full gold-gradient flex items-center justify-center text-white font-black text-2xl mb-8 shadow-lg">
+                        3</div>
+                    <h4 class="font-bold text-xl mb-4 text-white">Bắt đầu sử dụng</h4>
+                    <p class="text-white/60 text-sm leading-relaxed">Sử dụng ngay các đặc quyền: Tư vấn online, khám
+                        tổng quát & Thư ký y khoa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 lg:px-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row justify-between items-center mb-16 gap-8">
+                <div class="text-center lg:text-left">
+                    <span class="text-gold-main font-bold text-xs tracking-widest uppercase mb-4 block">Bản tin sức
+                        khỏe</span>
+                    <h2 class="text-4xl lg:text-5xl font-black text-dark-teal">Kiến thức y khoa chuyên sâu</h2>
+                </div>
+                <a href="newsletter.html"
+                    class="inline-flex items-center gap-2 text-primary-teal font-bold hover:text-accent-teal transition-colors py-2 border-b-2 border-primary-teal/10 hover:border-accent-teal">
+                    Xem tất cả bài viết <span class="material-symbols-outlined">north_east</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <a href="article.html"
+                    class="group bg-[#F9FAFB] rounded-4xl overflow-hidden border border-gray-100 flex flex-col md:flex-row shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="md:w-2/5 shrink-0 overflow-hidden">
+                        <img alt="Featured"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIHDLDL0enj85nGFV7v5neLa-LcLa1BmFjurWnU7Z3UbBzEjbu5j23RFl9GTs3GVjhzBNdSzsdPkDqRkvUs4PCPB9KC2BmXARIa5hqSZe2nuIcjAwI2UkGuwISM8kYwdV7DYqLffAmMu2gPhTCuI3gWppfJMCxDU7PQS0ttLZEWCmPPdWhoTtygXGgqY7yUBwMvRVmcts5ZVTkCdoJ247ciBOzPe_R3WVYZCGS2AnAIKmIydfQtKpHjaAjHeEU7pirHjuST8iTTn7x" />
+                    </div>
+                    <div class="p-8 flex flex-col justify-center">
+                        <span class="text-[10px] font-bold text-gold-main uppercase tracking-widest mb-3">Mới
+                            nhất</span>
+                        <h3
+                            class="text-xl font-bold text-dark-teal group-hover:text-primary-teal transition-colors mb-4 leading-tight">
+                            Cách nhận biết sớm và phòng ngừa đột quỵ ở người trẻ tuổi</h3>
+                        <p class="text-gray-500 text-sm line-clamp-2 mb-6">Lối sống hiện đại đang khiến nguy cơ đột quỵ
+                            trẻ hóa. Tìm hiểu các dấu hiệu cảnh báo 'vàng'...</p>
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">event</span> 15/10/2024</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="flex flex-col gap-6">
+                    <div
+                        class="flex gap-6 group cursor-pointer items-center p-4 rounded-3xl hover:bg-white border border-transparent hover:border-gray-100 hover:shadow-sm transition-all">
+                        <img class="size-20 rounded-2xl object-cover shadow-sm"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdPfJJbdlaFHxAA-93808EtXrzz1-s0MMD7bjY90Pxo-erDA6Z3iEtz9n1AvpO7Ky4Y-Mbzq42wa3-rJNzWkTWI3NTa9gcW1kmznoMefdUMiwqo7asQSQL-3KMQpCRMoftX6_ngfJjxmAAchgvxs2hoDBuHT7c-F2_F5vwiWt76uXY-5ujFR8vsZo9jwWidjjgKkNbQk1ZvbWZCMPxk4IN2FxM3VY_VAPt9Nt2u5TDyPteijfA3rObByUnSoV_iad_7guJ4N8NACXI" />
+                        <div>
+                            <h4
+                                class="font-bold text-dark-teal group-hover:text-primary-teal transition-colors line-clamp-2">
+                                Chế độ dinh dưỡng hồi phục sau điều trị cao cấp</h4>
+                            <p class="text-[10px] text-gray-400 font-bold uppercase mt-2">08 Tháng 10, 2024</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-6 group cursor-pointer items-center p-4 rounded-3xl hover:bg-white border border-transparent hover:border-gray-100 hover:shadow-sm transition-all">
+                        <img class="size-20 rounded-2xl object-cover shadow-sm"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwWK6FTjdpb__8XVXS8D3qlP-8gaizIxqw59D51Ka9ZjVwxMruSWdOfzWOpwaBupbA_yKuZvNQcwZ8ZYl9oDoOvAC-yD3yi_4P1_qxdFyT72HRl4nE4X4zK86k6RzVKcy54cV_kA7-UWmJI0AVYD0Ay0vSnnXosKQKUCtmu_E97EnjpNaejvKtr_4iZ0SPHoaIpQEXcY2QXNiLa-nKgpv2wbJxtFhQHSfNzSulw56fRE-yBs8czXu72HrTUF9LEE8hFfW_urfFqX2U" />
+                        <div>
+                            <h4
+                                class="font-bold text-dark-teal group-hover:text-primary-teal transition-colors line-clamp-2">
+                                Yoga trị liệu: Phương pháp vàng cho cột sống văn phòng</h4>
+                            <p class="text-[10px] text-gray-400 font-bold uppercase mt-2">05 Tháng 10, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/components.js"></script>
+</body>
+
+</html>
