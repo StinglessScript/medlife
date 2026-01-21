@@ -4,28 +4,33 @@
  */
 
 const headerHTML = `
-    <header class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-[100] border-b border-gray-100">
+    <header class="fixed top-0 left-0 right-0 bg-white z-[100] border-b border-gray-100">
         <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-8">
-                <a class="flex items-center gap-2" href="index.html">
-                    <div class="flex items-center gap-2">
-                        <span class="text-primary-teal font-black text-xl tracking-tighter">BIDV <span class="text-gold-main">•</span> MetLife</span>
-                        <span class="text-gray-200">|</span>
-                        <span class="text-primary-teal font-black text-xl tracking-tighter uppercase">TrueDoc</span>
-                    </div>
+            <!-- Logo Section -->
+            <div class="flex-shrink-0">
+                <a class="flex items-center gap-6" href="index.html">
+                    <img src="https://www.bidvmetlife.com.vn/content/dam/metlifecom/vn/img/logo/logo_xoa_nen.png" 
+                        alt="BIDV MetLife" class="h-7 md:h-8">
+                    <div class="h-8 w-px bg-gray-200"></div>
+                    <img src="https://theme.hstatic.net/200000786703/1001159430/14/shop_logo_image_medium.png?v=1089" 
+                        alt="TrueDoc" class="h-7 md:h-4">
                 </a>
-                <div class="hidden lg:flex items-center gap-8 ml-8">
-                    <a class="nav-link text-gray-600 text-sm font-semibold hover:text-primary-teal transition-colors"
-                        href="index.html" data-page="home">Trang chủ</a>
-                    <a class="nav-link text-gray-600 text-sm font-semibold hover:text-primary-teal transition-colors"
-                        href="benefits.html" data-page="benefits">Quyền lợi</a>
-                    <a class="nav-link text-gray-600 text-sm font-semibold hover:text-primary-teal transition-colors"
-                        href="newsletter.html" data-page="newsletter">Bản tin</a>
-                    <a class="nav-link text-gray-600 text-sm font-semibold hover:text-primary-teal transition-colors"
-                        href="lookup.html" data-page="lookup">Tra cứu</a>
-                </div>
             </div>
-            <div class="flex items-center gap-6">
+
+            <!-- Center Navigation (Desktop) -->
+            <div class="hidden lg:flex items-center justify-center gap-10 flex-1">
+                <a class="nav-link text-gray-600 text-[13px] font-bold hover:text-primary-teal transition-colors tracking-wide"
+                    href="index.html">Trang chủ</a>
+                <a class="nav-link text-gray-600 text-[13px] font-bold hover:text-primary-teal transition-colors tracking-wide"
+                    href="benefits.html">Quyền lợi</a>
+                <a class="nav-link text-gray-600 text-[13px] font-bold hover:text-primary-teal transition-colors tracking-wide"
+                    href="newsletter.html">Bản tin sức khỏe</a>
+                <a class="nav-link text-gray-600 text-[13px] font-bold hover:text-primary-teal transition-colors tracking-wide"
+                    href="lookup.html">Tra cứu quyền lợi</a>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-4 flex-shrink-0">
                 <div class="hidden sm:flex items-center gap-2 text-primary-teal bg-primary-teal/5 px-4 py-2 rounded-full border border-primary-teal/10">
                     <span class="material-symbols-outlined text-sm">phone_in_talk</span>
                     <span class="text-sm font-black tracking-tight">1900 2839</span>
@@ -41,9 +46,13 @@ const headerHTML = `
         <div id="mobile-menu" class="fixed inset-0 bg-white z-[101] translate-x-full transition-transform duration-500 lg:hidden">
             <div class="p-6 flex flex-col h-full">
                 <div class="flex items-center justify-between mb-12">
-                     <div class="flex items-center gap-2">
-                        <span class="text-primary-teal font-black text-lg tracking-tighter">BIDV <span class="text-gold-main">•</span> MetLife</span>
-                    </div>
+                     <a class="flex items-center gap-4" href="index.html">
+                        <img src="https://www.bidvmetlife.com.vn/content/dam/metlifecom/vn/img/logo/logo_xoa_nen.png" 
+                            alt="BIDV MetLife" class="h-6">
+                        <div class="h-6 w-px bg-gray-100"></div>
+                        <img src="https://theme.hstatic.net/200000786703/1001159430/14/shop_logo_image_medium.png?v=1089" 
+                            alt="TrueDoc" class="h-3">
+                    </a>
                     <button id="mobile-menu-close" class="size-10 flex items-center justify-center text-primary-teal">
                         <span class="material-symbols-outlined text-3xl">close</span>
                     </button>
